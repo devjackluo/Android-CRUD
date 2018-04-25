@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jack.androidcrud.EditRecordActivity">
+
+    <EditText
+        android:id="@+id/edtEditName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="EDIT RECORD"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddRecords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <EditText
+        android:id="@+id/edtEditDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditName"
+        app:layout_constraintStart_toStartOf="@+id/edtEditName"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditName" />
+
+    <EditText
+        android:id="@+id/edtEditPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditDescription"
+        app:layout_constraintStart_toStartOf="@+id/edtEditDescription"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditDescription" />
+
+    <EditText
+        android:id="@+id/edtEditRating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Rating"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditPrice"
+        app:layout_constraintStart_toStartOf="@+id/edtEditPrice"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditPrice" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="saveChanges"
+        android:text="Save Changes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/editImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSaveChanges"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditRating"
+        app:layout_constraintVertical_bias="0.625"
+        app:srcCompat="@drawable/clickme" />
+</android.support.constraint.ConstraintLayout>
